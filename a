@@ -1,0 +1,5 @@
+#!/bin/bash
+
+LeakCheck ./spacewar
+
+leak-analyze ./spacewar

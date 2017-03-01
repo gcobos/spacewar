@@ -1,0 +1,25 @@
+
+
+- Una vez que empieza la partida se cogen los tiempos de las dos maquinas, y se calcula el retardo de la conexion
+
+- El retardo medio entre los dos sentidos será T. El tiempo total del juego será S=0. 
+
+- Cuando S=T/2, cada cliente manda sus eventos al cliente remoto y se desincroniza
+
+- La sincronización llega cuando cuando me llega un paquete del otro cliente.
+
+- 
+
+
+
+
+- En 0.0 se envian los eventos de uno al otro
+
+- En 0.5 se empiezan a ejecutar los eventos de mi cliente
+
+- En 1.0 llegan los eventos del otro cliente, que se empiezan a ejecutar en ese momento, y envio mis eventos
+  restantes.
+
+- En 1.5 envio mis eventos en la cola 
+
+

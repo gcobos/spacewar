@@ -1,0 +1,6 @@
+#!/bin/bash
+
+make
+LeakCheck ./spacewar
+
+leak-analyze ./spacewar leak.out app.cpp | less

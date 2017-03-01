@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+
+	<section name="Configuration">
+		<section name="Screen">
+			<integer name="Width" value="1024"/>
+			<integer name="Height" value="768"/>
+			<boolean name="FullScreen" value="false"/>
+		</section>
+		
+		<section name="Options">
+			<boolean name="Planet" value="false"/>
+			<boolean name="Gravity" value="false"/>
+			<float name="GravityPower" value="3"/>
+		</section>
+		
+		<section name="Ships">
+			<float name="EnergyReloadTime" value="2"/>
+			<float name="fillReloadTime" value="0.02"/>
+			<integer name="MaxShield" value="128"/>
+			<integer name="MaxEnergy" value="128"/>
+			<integer name="Shield" value="32"/>
+			<integer name="Energy" value="128"/>
+			<integer name="TeleportUnitCost" value="8"/>
+			
+			<section name="Rotate">
+				<float name="Angle" value="4"/>
+				<float name="ReloadTime" value="0.01"/>
+			</section>
+
+			<section name="Engine">
+				<float name="Increment" value="14"/>
+				<float name="MaxPower" value="1200"/>
+				<float name="ReloadTime" value="0.5"/>
+				<integer name="UnitCost" value="1"/>
+			</section>
+
+			<section name="Laser">
+				<integer name="Length" value="180"/>
+				<float name="ReloadTime" value="0.3"/>
+				<integer name="Damage" value="2"/>
+				<integer name="UnitCost" value="1"/>
+			</section>
+
+			<section name="Missile">
+				<float name="SpeedBase" value="340"/>
+				<float name="ActiveTime" value="14"/>
+				<float name="ReloadTime" value="0.1"/>
+				<integer name="MaxMissiles" value="7"/>
+				<integer name="Damage" value="4"/>
+				<integer name="UnitCost" value="1"/>
+			</section>
+
+			<section name="Hide">
+				<float name="ReloadTime" value="0.5"/>
+				<integer name="UnitCost" value="1"/>
+			</section>
+		</section>
+
+		<section name="Controls">
+			<section name="Player1">
+				<integer name="Engine"		value="115"/>
+				<integer name="RotateLeft"	value="97"/>
+				<integer name="RotateRight"	value="100"/>
+				<integer name="Missile"		value="101"/>
+				<integer name="Laser"		value="113"/>
+				<integer name="Hide"		value="119"/>
+				<integer name="Teleport"	value="120"/>
+				<integer name="FillEnergy"	value="122"/>
+				<integer name="FillShield"	value="99"/>
+			</section>
+			<section name="Player2">
+				<integer name="Engine"		value="75"/>
+				<integer name="RotateLeft"	value="74"/>
+				<integer name="RotateRight"	value="76"/>
+				<integer name="Missile"		value="79"/>
+				<integer name="Laser"		value="85"/>
+				<integer name="Hide"		value="73"/>
+				<integer name="Teleport"	value="59"/>
+				<integer name="FillEnergy"	value="77"/>
+				<integer name="FillShield"	value="58"/>
+			</section>
+		</section>
+	</section>
+
+	<surface name="background" file="../gfx/background.jpg"/>
+	<surface name="Logo" file="../gfx/spacewar4.png"/>
+
+	<sprite name="font_glyph">
+		<image file="../gfx/fuente.png"><alpha /></image>
+	</sprite>
+
+	<font name="font">
+		<bitmap spacelen="4" glyphs="font_glyph" letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ!?/()=-_.,;:0123456789" />
+	</font>
+
+	<section name="Sprites">
+
+		<sprite name="planet">
+			<image file="../gfx/jupiter.png" />
+			<translation origin="center"/>
+			<rotation origin="center"/>
+		</sprite>
+
+		<sprite name="Ship1" base_angle="0">
+			<image file="../gfx/ship10b.png" />
+			<translation origin="center"/>
+			<rotation origin="center"/>
+		</sprite>
+
+		<sprite name="Ship2" base_angle="0">
+			<image file="../gfx/ship12b.png" />
+			<translation origin="center"/>
+			<rotation origin="center"/>
+		</sprite>
+
+		<sprite name="Missile1" base_angle="0">
+			<image file="../gfx/missile1.png" />
+			<translation origin="center"/>
+			<rotation origin="center"/>
+		</sprite>
+
+		<sprite name="Missile2" base_angle="0">
+			<image file="../gfx/missile2.png" />
+			<translation origin="center"/>
+			<rotation origin="center"/>
+		</sprite>
+
+		<sprite name="Laser" base_angle="0">
+			<image file="../gfx/laser.png" />
+			<translation origin="bottom_center"/>
+			<rotation origin="bottom_center"/>
+		</sprite>
+	
+		<sprite name="Explosion" base_angle="0">
+			<image file="../gfx/explosion_01.png" />
+			<image file="../gfx/explosion_02.png" />
+			<image file="../gfx/explosion_03.png" />
+			<image file="../gfx/explosion_04.png" />
+			<image file="../gfx/explosion_05.png" />
+			<image file="../gfx/explosion_06.png" />
+			<image file="../gfx/explosion_07.png" />
+			<image file="../gfx/explosion_08.png" />
+			<image file="../gfx/explosion_09.png" />
+			<image file="../gfx/explosion_10.png" />
+			<image file="../gfx/explosion_11.png" />
+			<image file="../gfx/explosion_12.png" />
+			<image file="../gfx/explosion_13.png" />
+			<image file="../gfx/explosion_14.png" />
+			<translation origin="center"/>
+			<rotation origin="center"/>
+			<animation loop="no" speed="40"></animation>
+		</sprite>
+
+		<sprite name="Teleport" base_angle="0">
+			<image file="../gfx/teleport_01.png" />
+			<image file="../gfx/teleport_02.png" />
+			<image file="../gfx/teleport_03.png" />
+			<image file="../gfx/teleport_04.png" />
+			<image file="../gfx/teleport_05.png" />
+			<image file="../gfx/teleport_06.png" />
+			<image file="../gfx/teleport_07.png" />
+			<image file="../gfx/teleport_08.png" />
+			<image file="../gfx/teleport_09.png" />
+			<image file="../gfx/teleport_08.png" />
+			<image file="../gfx/teleport_07.png" />
+			<image file="../gfx/teleport_06.png" />
+			<image file="../gfx/teleport_05.png" />
+			<image file="../gfx/teleport_04.png" />
+			<image file="../gfx/teleport_03.png" />
+			<image file="../gfx/teleport_02.png" />
+			<image file="../gfx/teleport_01.png" />
+			<translation origin="center"/>
+			<rotation origin="center"/>
+			<animation loop="no" pingpong="no" speed="30"></animation>
+		</sprite>
+	</section>
+
+	<section name="Sound">
+		<sample name="Missile" file="../snd/missile.wav"/>
+		<sample name="Explosion" file="../snd/explosion.wav"/>
+		<sample name="Laser" file="../snd/laser.wav"/>
+		<sample name="Alarm" file="../snd/alarm4.wav"/>	
+		<sample name="Teleport" file="../snd/teleport.wav"/>
+		<sample name="IntroMusic" file="../snd/intro.xm"/>
+		<sample name="MenuItem" file="../snd/menuitem.wav"/>
+		<sample name="MenuSelect" file="../snd/menuselect.wav"/>
+	</section>
+</resources>

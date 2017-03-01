@@ -1,0 +1,174 @@
+
+- Que la pantalla completa no pierda el foco
+
+- Que haya estrellas que brillen de vez en cuando 
+
+* Sonido bueno para la alarma
+
+* Música para la intro
+
+- Animación para la intro
+
+- Arma cuerda-laser  ???
+
+* A veces cuando se dispara un misil cerca del borde de la pantalla, le da a la propia nave
+
+- Hacer que se puedan modificar las teclas en el menu para luego cargarlas en el juego
+
+* Parpadeo de escudo cuando quede poco
+
+NO Echar a rular el timer de decimas de segundo
+
+- Depurar leaks
+
+* Hacer visible el menu (y usable despues)
+
+* Cuando se sale del juego se debe ir al menu
+
+- Objetos que aparecen para coger por la pantalla
+
+* Las naves no deben solaparse
+
+NO El rebote entre las naves tiene una perdida para que se terminen parando
+
+* Desplazamiento de energia a escudo y viceversa temporizado
+
+* Laser debe afectar a todos los objetos por igual (como a las naves)
+
+* Rotacion de la nave con temporizacion
+
+* Fallo extraño que sale del juego al teletransportarse
+
+* Arreglar el movimiento de los misiles
+
+* Arreglar setpos de los misiles
+
+* Gravedad
+
+- Menú del juego: (Con ratón o teclas)
+
+	   Jugar
+	    Red
+	  Opciones
+	   Salir
+
+* Transicion entre juego y menú
+
+* Capar los controles de las naves cuando no se está jugando
+
+* Al morir una nave vuelve a la pantalla de inicio
+
+* Pantalla de inicio
+
+- Misiles con humo detrás
+
+* Colision con el planeta por distancia al centro, no por contorno
+
+* Aleatoriedad
+
+* Evitar que las naves se teletransporten una encima de la otra
+
+- Planeta con animacion
+
+* Animacion de teletransporte y mejora del recorrido
+
+* Recargas de energia solo hasta el maximo de energia, y sólo si tiene algo de energía
+
+- Propulsores al moverse la nave
+
+* Ocultarse gasta energia
+
+* Moverse gasta energia
+
+* Hacer que cosas que ahora dependan de la velocidad de refresco, dependan del lapso de tiempo
+
+* Que no se pueda disparar o moverse si no se tiene energia
+
+* Recarga de energía
+
+* Alarmas al quedar poco escudo
+
+* El planeta quita el total de la vida si esta en contacto una decima de segundo con la nave
+
+* Que disparar gaste energia
+
+* Que los misiles y los lasers quiten vida
+
+* Que las naves puedan morir
+
+* Hacerse invisible
+
+* Teletransporte
+
+* Vida y energia de las naves
+
+* Mejorar la deteccion de colisiones
+
+* Colision entre los lasers y todo lo demas menos la nave que dispara (el dueño)
+
+* Buscar la forma de dibujar y hacer colision por los bordes de la pantalla
+
+- Las posiciones de colision, nunca pueden ser mayores del ancho y alto (restarlo cuando eso pase y hacerlo negativo)
+
+* Volver a meter los lasers, y su colision
+
+* La velocidad de un misil es la suma de la velocidad base del misil + la componente de velocidad de la nave a
+  ese angulo
+
+* Explosiones con angulo aleatorio
+
+* Depurar bloqueo al disparar misiles la nave 2 (collision outline del misil 2)
+
+* Un tipo de misil mata al otro, pero no a sí mismo
+
+* Velocidad de los misiles acorde con el de la nave
+
+* Que el misil me de a mi mismo
+
+* Probar el driver para sdl
+
+* No se dispara más de 1 misil si no se deja de pulsar el botón de disparo
+
+* Maximo de 7 misiles disparados
+
+* Si la velocidad de una nave es la maxima, la pone al 95% para poder maniobrar
+
+* Hacer que los misiles y lasers cojan y usen las propiedades del resource
+
+* Hacer que funcione el laser
+
+* Colision entre las naves y traspaso del empuje
+
+* Hacer que funcione el misil
+
+* Limpieza general
+
+* Eliminar las torretas
+
+* Arreglar el teclado (por polling)
+
+* Arreglar la deteccion de colisiones
+
+* Arreglar el desplazamiento de las naves
+
+NO Pasar a radianes todo
+
+* Mensajes dentro del juego, a modo de espera antes de empezar a jugar
+
+* Eliminar la gravedad si están los jugadores en espera
+
+- Poder elegir si se quiere música o no
+
+* Eliminar codigo no necesario
+
+* Manejar las dos naves con las teclas
+
+- Escoger los graficos definitivos
+
+- Juego en red
+
+- Juego contra la maquina
+
+-------------------------
+
+ 
