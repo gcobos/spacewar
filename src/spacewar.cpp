@@ -36,7 +36,7 @@ SpaceWar::SpaceWar (CL_ResourceManager *rsc)
 	music=new CL_SoundBuffer("Sound/IntroMusic", resources);
 	musicSession=music->prepare();
 	musicSession.set_looping(true);
-	musicSession.set_volume(0.2);
+	musicSession.set_volume(0.15);
 
 	// Menu del juego
 	menu=new Menu(this,font,rsc);
@@ -99,7 +99,7 @@ void SpaceWar::initGame ()
 	int i;
 
 	// Para la música de la intro
-	musicSession.set_volume(0.1);
+	musicSession.set_volume(0.08);
 
 	// Pilla las teclas del resource para todo el juego
 	keys[PL1_ENGINE]=		CL_Integer("Configuration/Controls/Player1/Engine", 	resources);
@@ -143,7 +143,7 @@ void SpaceWar::initGame ()
 
 	playing=true;
 
-	showMessage("PEPARADOS!!",5);	// Número de segundos hasta empezar
+	showMessage((char*)"PEPARADOS!!",5);	// Número de segundos hasta empezar
 }
 
 void SpaceWar::termGame ()

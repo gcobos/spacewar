@@ -24,8 +24,7 @@ OBJ = $(SOURCES:%.cpp=%.o)
 
 # rules and other cruft
 all: $(TARGET)
-
-dep: depend
+	mv $(TARGET) ..
 
 .SUFFIXES: .cpp
 %.o: %.cpp
